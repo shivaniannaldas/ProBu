@@ -1,0 +1,400 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    font-size: 1.3cap;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    /*overflow: hidden;*/
+    text-align: center;
+}
+
+.hero {
+    background: url('graph.jpg')no-repeat center center/cover;
+    color: #fff;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+/*.hero {
+    background: url('https://example.com/your-background-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}*/
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*.hero img.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}*/
+
+
+/*.hero .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+.hero .btn:hover {
+    background: #444;
+}*/
+
+.hero .btn {
+    display: inline-block;
+    position: relative;
+    padding: 15px 40px;
+    text-decoration: none;
+    color: rgb(249, 242, 242);
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.hero .btn {
+    background: #0c0100;
+    font-weight: 100;
+}
+
+.hero .btn svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero .btn rect {
+    fill: none;
+    stroke: #f8f3f3;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+}
+
+.hero .btn:hover {
+    font-weight: bold; /* Make text bold on hover */
+}
+
+.hero .btn:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#circle-images {
+    padding: 1px 0;
+    text-align: center;
+    background: #fff; /* Background color for the circle images section */
+}
+
+#circle-images .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#circle-images .circle {
+    width: 300px;  /* Increased size */
+    height: 300px; /* Increased size */
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    transition: transform 0.3s;
+}
+
+#circle-images .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+#circle-images .circle:hover {
+    transform: scale(1.1);
+}
+
+#circle-images .circle:hover img {
+    transform: scale(1.1);
+}
+
+#about, #features {
+    padding: 30px 0;
+    text-align: center;
+}
+
+#about h2 {
+    margin-bottom: 30px; /* Adjust the value as needed for more or less space */
+}
+
+#features h2 {
+    margin-bottom: 30px; /* Adjust the value as needed for more or less space */
+}
+/*#features .features-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+#features .feature {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}*/
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+
+
+/*.about, .features {
+    padding: 50px 0;
+    text-align: right;
+}*/
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: right; /* Aligns the text to the right within the flex item */
+}
+
+.about-img {
+    max-width: 40%; /* Adjust as needed */
+    margin-right: 20px; /* Space between the image and the text */
+}
+
+.content p {
+    max-width: 60%; /* Adjust as needed */
+    text-align: left; /* Ensures text is right-aligned within the paragraph */
+}
+
+
+
+
+
+
+/*body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    overflow-x: hidden;
+}*/
+
+body, html {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    overflow-x: hidden;
+    
+}
+
+.container1 {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+.section p{
+    text-align: left;
+}
+
+.image-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+}
+
+.text {
+    width: 800px; /* Set a fixed width for the text */
+    height: 180px;
+    padding: 20px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: absolute;
+    opacity: 0;
+    font-size: 15px;
+    color: #333;
+    background: transparent;
+    border-radius: 10px;
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.1);*/
+}
+
+.left .image {
+    transform: translateX(0);
+}
+
+.left .text {
+    transform: translateX(500px); /* Move text out of view initially */
+}
+
+.right .image {
+    transform: translateX(0);
+}
+
+.right .text {
+    transform: translateX(-400px); /* Move text out of view initially */
+}
+
+.section.in-view .left .image {
+    transform: translateX(-400px); /* Move image to the left */
+}
+
+.section.in-view .left .text {
+    transform: translateX(-100px); /* Move text into view */
+    opacity: 1;
+}
+
+.section.in-view .right .image {
+    transform: translateX(380px); /* Move image to the right */
+}
+
+.section.in-view .right .text {
+    transform: translateX(-450px); /* Move text into view */
+    opacity: 1;
+}
+
+
+
+
+
+
+
+/*.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+
+
+/* General container styles */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #f8f8f8; /* Change this to your preferred background color */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    
+   
+}
+
+.footer img {
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.footer a {
+    color: #0f6ed0;
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+/* Footer copyright section */
+.footer-copyright-section {
+    background-color: #161617; /* Change this to your preferred background color */
+    color: #fff;
+    padding: 3px 0;
+    text-align: center;
+    margin-bottom: -30px;
+}
+
+.footer-copyright-section p {
+    margin: 0;
+    font-size: 17px;
+    
+}
+/*.footer p:last-of-type {
+    margin-bottom: 50px; /* Increased margin-bottom to create space above black footer*
+}
+
+Responsive design */
+@media (max-width: 767px) {
+    .footer {
+        text-align: center;
+    }
+
+    .footer img {
+        width: 100px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
+
+
+
+
